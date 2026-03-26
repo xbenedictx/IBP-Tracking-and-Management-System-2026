@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBP Case Management System | Dagupan Chapter</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50">
+
+    <!-- LOGIN SCREEN -->
+    <div id="login-screen"></div>
+
+    <!-- MAIN APPLICATION -->
+    <div id="main-app" class="hidden min-h-screen">
+        <nav id="navbar" class="bg-white border-b border-slate-200 shadow-sm"></nav>
+        <div class="flex">
+            <div id="sidebar" class="w-72 bg-white border-r border-slate-200 h-[calc(100vh-73px)] overflow-y-auto"></div>
+            <div id="content-area" class="flex-1 p-8 overflow-y-auto"></div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="case-modal" class="hidden fixed inset-0 bg-black/60 z-50 flex items-center justify-center"></div>
+    <div id="privacy-modal" class="hidden fixed inset-0 bg-black/60 z-[100] flex items-center justify-center"></div>
+    <div id="notification-drawer" class="hidden fixed inset-0 bg-black/50 z-[999] flex justify-end"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/cases.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
