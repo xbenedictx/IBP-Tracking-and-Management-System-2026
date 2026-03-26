@@ -1,4 +1,3 @@
-// Mock Database - Updated for IBP Dagupan Chapter
 let currentUser = null;
 let currentRole = null;
 
@@ -9,73 +8,42 @@ const cases = [
         title: "Annulment of Marriage - Reyes vs. Santos",
         type: "Family Law",
         subtype: "Annulment / Legal Separation",
-        description: "Petition for declaration of nullity of marriage",
         status: "In Progress",
         assignedTo: "Atty. Maria Santos",
         assignedToId: 2,
         expertise: "Family",
         dateCreated: "2026-03-20",
-        documents: [
-            { name: "Complaint.pdf", date: "2026-03-20" }
-        ],
-        timeline: [
-            { date: "2026-03-20", action: "Case Encoded", by: "Clerk Garcia" },
-            { date: "2026-03-21", action: "Auto-assigned", by: "System" }
-        ]
+        documents: [{ name: "Complaint.pdf", date: "2026-03-20" }]
     },
     {
         id: 2,
-        number: "IBP-DAG-2026-002",
-        title: "Estafa Case - Complainant vs. Accused",
-        type: "Criminal",
-        subtype: "Estafa",
-        description: "Criminal complaint for estafa involving PHP 450,000",
-        status: "Under Review",
-        assignedTo: "Unassigned",
-        assignedToId: null,
-        expertise: "Criminal",
+        number: "G.R. No. 246816",
+        title: "ANGKLA v. COMMISSION ON ELECTIONS (Vol.65)",
+        type: "Political Law",
+        subtype: "Party-List System",
+        status: "Decided",
+        assignedTo: "Atty. Maria Santos",
+        assignedToId: 2,
+        expertise: "Political",
         dateCreated: "2026-03-25",
-        documents: [],
-        timeline: [
-            { date: "2026-03-25", action: "Case Encoded", by: "Clerk Garcia" }
-        ]
-    },
-    {
-        id: 3,
-        number: "IBP-DAG-2026-003",
-        title: "Illegal Dismissal - Juan vs. ABC Company",
-        type: "Labor",
-        subtype: "Illegal dismissal",
-        description: "Complaint for illegal dismissal and monetary claims",
-        status: "Resolved",
-        assignedTo: "Atty. Jose Morales",
-        assignedToId: 4,
-        expertise: "Labor",
-        dateCreated: "2026-03-15",
-        documents: [{ name: "Resolution.pdf", date: "2026-03-22" }],
-        timeline: [
-            { date: "2026-03-15", action: "Case Encoded", by: "Clerk Garcia" },
-            { date: "2026-03-22", action: "Case Resolved", by: "Atty. Morales" }
-        ]
+        documents: [{ name: "Vol.65-Recent-Jurisprudence_2020-2021.pdf", date: "2026-03-26" }]
     }
 ];
 
 const lawyers = [
     { id: 2, name: "Atty. Maria Santos", expertise: "Family", workload: 3 },
-    { id: 4, name: "Atty. Jose Morales", expertise: "Labor", workload: 4 },
-    { id: 5, name: "Atty. Elena Lopez", expertise: "Criminal", workload: 2 }
+    { id: 4, name: "Atty. Jose Morales", expertise: "Political", workload: 2 }
 ];
 
 const notifications = [
-    { id: 1, message: "New case IBP-DAG-2026-002 requires assignment", time: "2 min ago" },
-    { id: 2, message: "Document uploaded to case IBP-DAG-2026-001", time: "1 hour ago" }
+    { id: 1, message: "New case from Vol.65 Jurisprudence requires assignment", time: "5 min ago" }
 ];
 
 const users = [
-    { id: 1, name: "Admin User", email: "admin@ibp.ph", role: "admin" },
-    { id: 2, name: "Atty. Maria Santos", email: "maria.santos@ibp.ph", role: "lawyer" },
-    { id: 3, name: "Clerk Garcia", email: "clerk.garcia@ibp.ph", role: "clerk" },
-    { id: 5, name: "Viewer Account", email: "viewer@ibp.ph", role: "viewer" }
+    { id: 1, name: "Admin User", email: "admin@ibpdagupan.ph", role: "admin" },
+    { id: 2, name: "Atty. Maria Santos", email: "attorney.santos@ibpdagupan.ph", role: "lawyer" },
+    { id: 3, name: "Clerk Garcia", email: "clerk.garcia@ibpdagupan.ph", role: "clerk" },
+    { id: 5, name: "Viewer Account", email: "viewer@ibpdagupan.ph", role: "viewer" }
 ];
 
 window.appData = {

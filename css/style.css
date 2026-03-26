@@ -1,33 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap');
 
-:root {
-    --primary: #003087;
-}
+:root { --primary: #003087; }
 
-* {
-    font-family: 'Inter', system_ui, sans-serif;
-}
-
-.mono {
-    font-family: 'Roboto Mono', monospace;
-}
+* { font-family: 'Inter', system_ui, sans-serif; }
+.mono { font-family: 'Roboto Mono', monospace; }
 
 .sidebar-link {
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .sidebar-link:hover {
     background-color: #f1f5f9;
     transform: translateX(6px);
 }
-
 .active {
     background-color: var(--primary);
     color: white;
-}
-
-.card-hover {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-hover:hover {
@@ -42,15 +29,7 @@
 .modal {
     animation: modalPop 0.3s ease-out forwards;
 }
-
 @keyframes modalPop {
     from { transform: scale(0.95); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
-}
-
-.status-dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
 }
